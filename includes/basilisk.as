@@ -130,7 +130,8 @@ function tongueBasiliskSmex():void {
 		outputText("\"<i>Wrap it around me,</i>\" you demand gruffly, poking your " + cockDescript(0) + " lightly against the end of its tongue.  Slowly, the basilisk does as you ask.  It is clumsy at first, taking time to get a sense of your girth and hardness as it tastes and licks blindly, but it quickly grows into the task.  Starting from just above your head, it curls its tongue right around your prick and then inches its way upwards, spiraling its long, incredibly flexible organ around you.  The more you feel this thing's tongue, the more you know you made the right choice here; the shifting, wet sensation as it snakes its way upwards towards your base is incredible, and gets better the more of your " + cockDescript(0) + " is swathed in mouth muscle.  It is unlike any tongue you've felt before... there is some kind of adhesive property in the basilisk's saliva which makes its soft flesh stick like a leech once it is on you.\n\n", false); 
 
 		//Single cock: 
-		if(player.cockTotal() == 1) {
+		if (player.cockTotal() == 1) {
+			outputText(images.showImage("basilisk-win-male-tonguebasilisk"));
 			outputText("Once it has wrapped around as much of your cock as it can, you take a moment to control yourself in this dizzying, soft yet tight vice grip your serpent sub now has you in.  \"<i>Squeeze.  Work it, nice and slow,</i>\" you say huskily.  The basilisk's tongue slides up and down your length, its saliva slathering every inch, the sticky, sucking sensation encompassing your cock on all sides.  It squeezes you softly and then relaxes... squeezes you, then relaxes, as it continues to spiral around and around.  It is everything you can do not to go over the edge straight away; you hold back desperately, staring upwards.  To blow your load before properly enjoying what is turning out to be a truly unbelievable suck would be a terrible crime.  You look downwards and manage to pull yourself back a bit by laughing hugely at the sight.  With the basilisk's tongue spiralled around you, your " + cockDescript(0) + " looks like nothing so much as an obscene candy cane.  The basilisk seems to take your hysterical laughter for anger or contempt, because it hastily increases its pace, forcing its sticky muscle up and down as fast as it can.  You lean back and lose yourself in the blissful, sucking, enveloping sensation.\n\n", false);
 
 			outputText("You last for as long as you can before, with a euphoric sigh, you reach your peak.  Your " + cockDescript(0) + " bulges and then rockets out stream after stream of jizz.  Directly in the line of fire, the blind basilisk takes its minute-long facial with as much dignity as it can muster- which is to say, none at all.\n\n", false);
@@ -144,7 +145,8 @@ function tongueBasiliskSmex():void {
 		outputText("You look beatifically down at it when you are finished and notice that despite itself the basilisk has got more than a bit turned on by your fairly callous treatment of it; the creature is finding it difficult to kneel properly with its long, purple erection poking against the ground.  You smile with satisfaction at how successfully you've managed to paint its face white with your seed.  \"<i>That's a good look for you.  We really must do this again,</i>\" you say as you loosen its blindfold just a little before taking your leave.  You chance a look back.  The creature is staggering in the opposite direction, wiping its face with a claw and trying not to bump its cock into anything, looking very dazed indeed.  You grin and make your way back to camp.", false);
 	}
 	//Female: 
-	else if(player.hasVagina()) {
+	else if (player.hasVagina()) {
+		outputText(images.showImage("basilisk-win-female-tonguebasilisk"));
 		outputText("\"<i>Lick me,</i>\" you tell the basilisk brusquely, as you push your hips out and present your " + vaginaDescript(0) + " to its tongue.  You decide you'll take your reward standing up; the sight of the beast on its knees in front of you is quite pleasing.\n\n", false);
 
 		outputText("The basilisk slowly does as you ask, leaning forward and pushing its long, slick tongue against your lips.  It is clumsy at first; unable to see, it has to feel with its slick mouth muscle, licking around the limits of your " + vaginaDescript(0) + " before pushing inside.  The creature inadvertently frustrates you, and so when it finally finds your hole it is welcoming and wet.\n\n", false);
@@ -169,7 +171,8 @@ function defeatBasiliskAndAnal():void {
 	outputText("You slap a hand on the scruff of the basilisk's neck, gripping as much of its leathery hide as you can.  \"<i>Crawl,</i>\" you snap, tugging it in the direction you want it to go.  The basilisk meekly does as it is told at first, feeling out in front of it with its claws blindly and following your lead.  It must take another peep at where it is being taken about two thirds of the way there however, because judging by the way it starts thrashing its limbs and tail around in protest, it guesses what you have in mind.  You have already broken its physical resistance though and you are able to ignore its pathetic pawing at your " + player.armorName + ", dragging the defeated reptile by the back of its neck the rest of the way.  You push your " + player.leg() + " savagely into its back and grip its spines as you position its head over the smooth, liquid mirror of the pool.  \"<i>Open your eyes,</i>\" you command.  The basilisk clenches them tighter.  You sigh and shove its head under the cold water, holding it there until its struggles grow weak and spasmodic before finally releasing.  You hum and examine your nails as the reptile heaves for air and coughs miserably, waiting patiently for the ripples on the pool's surface to subside.  \"<i>Open your eyes,</i>\" you say again, in exactly the same tone.  This time, the basilisk does as you say.  A smile curves your lips as you feel the creature tense and then freeze under you.  Staring at its reflection, it falls helplessly under its own spell.\n\n", false);
 
 	//Male/Herm: 
-	if(player.hasCock()) {
+	if (player.hasCock()) {
+		outputText(images.showImage("basilisk-win-male-giveanal"));
 		var x:Number = player.cockThatFits(monster.analCapacity());
 		outputText("You get off the basilisk and walk around it, giving it a cautious tap in the flank.  No response; the creature is well and truly paralyzed.  Knowing your prey is going nowhere, you undress at leisure, allowing your " + cockDescript(x) + " to slide out and feel the fresh air.  You kneel over the creature's hindquarters and rub yourself back and forth along its scales, hardening as you enjoy the warm, leathery sensation.  As the need to fuck takes hold of you, you try to get at the basilisk's tight, muscled ass, but its long tail, frozen in place, is in the way.  You pull at it, but the paralyzed flesh is impossible to move.  \"<i>Lift your tail!</i>\" you snap in frustration.  Immediately the tail lifts, raising up and back over the basilisk until its behind is unprotected, before freezing into place again. Your eyes widen ever so slightly as you realize how much power you have given yourself over the reptile; caught in a feedback loop of its own hypnosis, mind emptied, it is helplessly deferential to whatever anyone says to it.  A mad yet oddly tempting image of a dancing basilisk flits through your head... but no, your straining cock reminds you that there are more important matters at hand.  Without preamble, you grasp the creature's hindquarters and push your " + cockDescript(x) + " against its tight anus.\n\n", false);
 
@@ -241,7 +244,8 @@ function defaultBasiliskRape():void {
 	outputText("Working briskly, the basilisk tears off your " + player.armorName + " until you are entirely naked.  It then rummages through your pockets; it carelessly discards everything it finds without apparent interest.  It grabs a handful of gems from your purse and then prowls back to you.\n\n", false);
 
 	//Male/Herm: 
-	if(player.hasCock()) {
+	if (player.hasCock()) 
+	{		
 		outputText("With surprising gentleness and deftness, the basilisk rubs your " + cockDescript(0) + " with one palm", false);
 		if(player.hasVagina()) outputText(" and sticks some of the smaller fingers of its other hand in your " + vaginaDescript(0), false);
 		outputText(", thankfully angling its sickle claw away.  You can't do anything against it, and some of its mental compulsion remains; a backwash of erotic images from your past fill your head, and you can't even grit your teeth as the gentle, insistent pressure brushing your prick makes you rock hard.  It stops when you are erect and then, with the very faintest of smiles playing over its cruel mouth, leaves. You're naked, your " + cockDescript(0) + " is begging for release; you're utterly helpless... you can only hope that the spell will wear off, and before anything else in the mountain finds you.\n\n", false);
@@ -269,6 +273,7 @@ function defaultBasiliskRape():void {
 function basiliskHasVagEggStuff():void {
 	spriteSelect(75);
 	slimeFeed();
+	outputText(images.showImage("basilisk-loss-female-vageggrape"));
 	outputText("The basilisk is breathing heavily as it tears your " + player.armorName + " from your body, its warm exhalations rolling over your naked flesh.  It seems to be having difficulty controlling itself; from your frozen gaze you can see it constantly shifting its dreadful slit eyes back to your frame as it searches through your pockets with claws that tremble.  Eventually it throws down your attire and stares back into your eyes.  There is something else in there now; a pulsing lust, hints of red at the edges of that great, grey sea, a rapacious tide gathering.  You wish you could look away but there is more chance of you moving mountains.", false);
 	//(Heat: 
 	if(player.hasStatusAffect("heat") >= 0) outputText("  You are more aware than ever of an invisible scent simmering off you, of your wet vagina clenching and wetting itself in anticipation, your body begging this male creature to fulfil its genetic objective upon you.  Your eyes have betrayed you, your body is betraying you, and whatever else you are is a tiny, ignored voice screaming in between.", false);
@@ -323,7 +328,7 @@ function basiliskBirth():void {
 	if(player.hasPerk("Basilisk Womb") >= 0) {
 		outputText("\nA sudden pressure in your belly wakes you, making you moan softly in pain as you feel your womb rippling and squeezing, the walls contracting around the ripe eggs inside you.  You drag yourself from your bedding, divesting yourself of your lower clothes and staggering out into the middle of the camp. Squatting upright, you inhale deeply and start to concentrate.");
 		outputText("\n\nA thick, green slime begins to flow from your stretched netherlips, splatting wetly onto the ground below you and quickly soaking into the dry earth. You settle easily into the rhythm of oushing with your contractions and breathing deeply when they ebb.  The eggs inside you move quickly, lubricated by the strange slime that cushioned them in your womb, sized and shaped just right the pressure of their passage stretches you in the most delightly way, your [clit] growing erect");
-		if(player.hasCock()) outputText(" and [eachCock] starting to leak pre-cum");
+		if(player.hasCock()) outputText(" and [eachcock] starting to leak pre-cum");
 		outputText(" as you find yourself being moved to climax by the birthing.  You see no point in resisting and reach down to begin fiddling with yourself, moaning in pain-spiked pleasure as the stimulus overwhelms you. With an orgasmic cry, you release your eggs into the world amidst a gush of femcum");
 		if(player.hasCock()) outputText(" and a downpour of hermcum");
 		outputText(".");
@@ -421,6 +426,7 @@ function basiliskAdvantageNobody():void {
 }
 //Defeated, Taken Advantage of: Imp
 function basiliskAdvantageImp():void {
+	outputText(images.showImage("basilisk-loss-impfacefuck"));
 	outputText("Time stretches by at an agonizingly slow pace as you stand there, a bizarre, motionless flesh statue.  You have no way of measuring how much time is passing; the sun is not in your direct line of vision.   You try to move any and every part of yourself in turn, but it is hopeless.  Your body is a cage, and you begin to hate the basilisk less because it paralyzed you and more because it left your mind entirely aware of it.  Every so often another unbidden backwash of erotic memories overwhelms your senses, keeping you helplessly aroused and reminded of who did this to you.\n\n", false);
 	
 	outputText("You hear a whirring of small wings behind you and something lands on your shoulder.  You feel a weary despondency as you guess what it is, right before a reedy, sneering voice speaks into your ear.  \"<i>Well, well, well... ain't I the luckiest imp in Mareth?</i>\"\n\n", false);
@@ -443,7 +449,8 @@ function basiliskAdvantageHarpy():void {
 	outputText("You hear a shrill cry from above you, half eagle scream and half mocking, female laughter.  With a fluttering flap of feathers, a harpy lands at your side before proceeding to stalk around you, taking in your helpless, frozen form with stiff, jerky movements.  You reflect bitterly that if the big bottomed bird woman had turned up fifteen minutes ago she would probably have scared the basilisk off.  As it is, you are going to have to take whatever she can throw at you... with a stiff upper lip, as it were.\n\n", false);
 		
 	//Male/Herm: 
-	if(player.hasCock()) {
+	if (player.hasCock()) {
+		outputText(images.showImage("basilisk-loss-male-harpyrape"));
 		outputText("The harpy's eyes zero in on your erect cock greedily.  Stepping back from you she raises her head and lets out a screech which echoes around the mountains; as answering calls roll back to her she closes in, threads her arms around your neck and scalp and kisses you roughly. She pushes her golden lips against yours and squeezes her rough bird tongue into your mouth.  You feel your lips tingle and you raggedly moan against the savage frenching, her hot breath pushing down your throat as she circles your still tongue with her own, before exploring further down towards your tonsils.  By the time she has finished with you your whole body feels like it is glowing red from the effect of her lipstick, " + sMultiCockDesc() + " straining.\n\n", false);
 
 		outputText("You wonder vaguely how she and her no-doubt-soon-to-arrive sisters are going to take advantage of you as you are; you find out a moment later when with no preamble whatsoever the harpy shoves you roughly in the chest.  ", false);
@@ -474,6 +481,7 @@ function basiliskAdvantageHarpy():void {
 	//Female: 
 	else if(player.hasVagina()) {
 		spriteSelect(75);
+		outputText(images.showImage("basilisk-loss-female-harpyrape"));
 		outputText("The harpy comes to a halt behind you and begins to eagerly run her cold but soft hands over your bottom half, stroking your thighs and squeezing your " + buttDescript() + " as if appraising a piece of meat.  Whilst caressing your neck she runs her hands between your legs and grabs around your moistened delta impatiently, searching for something that isn't there.  She lets loose a squawk of pure frustration and wheels around you to glare in your eyes angrily.  The sex-crazed harridan is clearly deeply pissed off with you for lacking a cock she can abuse.  She shifts her eyes to your mouth, but quickly arrives at the same conclusion you've already come to: unable to move your mouth, you can't even be forced to give oral pleasure.  You feel a bizarre sense of triumph over the creature; you stare into space smugly as the harpy paces in front of you, glaring, thwarted but unwilling to give up her prize.  Perhaps eventually she will leave you alone...?\n\n", false);
 
 		outputText("The harpy suddenly closes in, threads her arms around your neck and scalp and kisses you roughly.  She pushes her golden lips against yours and squeezes her rough bird tongue into your mouth.  You feel your lips tingle and you raggedly moan against the savage frenching, her hot breath pushing down your throat as she circles your still tongue with her own, before exploring further down towards your tonsils.  By the time she has finished with you your whole body feels like it is glowing red from the effect of her lipstick, and your " + vaginaDescript(0) + " is leaking moisture down your thigh.  Maddeningly, the harpy ignores your needy sex and continues to stalk around you, a vengeful smirk changing to a thoughtful frown on her ferociously beautiful face.  You wish you could thrust your vagina towards her, make her heed the plight of your lust-racked body; hell, you are even beginning to wish you could give her head so she would at least consider rewarding you...\n\n", false);
@@ -509,7 +517,8 @@ function basiliskAdvantageGoblin():void {
 	outputText("Time stretches by at an agonizingly slow pace as you stand there, a bizarre, motionless flesh statue.  You have no way of measuring how much time is passing; the sun is not in your direct line of vision.   You try to move any and every part of yourself in turn, but it is hopeless.  Your body is a cage, and you begin to hate the basilisk less because it paralyzed you and more because it left your mind entirely aware of it.  Every so often another unbidden backwash of erotic memories overwhelms your senses, keeping you helplessly aroused and reminded of who did this to you.\n\n", false);
 
 	//Male/Herm: 
-	if(player.hasCock()) {
+	if (player.hasCock()) {
+		outputText(images.showImage("basilisk-loss-male-goblinrape"));
 		outputText("At the corner of your vision, you see a small, familiar green shape hover into view.  The goblin is so busy sorting through her inventory of drugs that you actually manage to see her before she sees you.  When she does lift her head up and notices the petrified, naked individual in front of her, she is so surprised she drops her satchel.\n\n", false);
 
 		outputText("\"<i>A " + player.race() + "!</i>\" she yelps.  Then, after shifting her startled attention downwards, \"<i>A cock!</i>\"  Hesitantly at first, then with increasing confidence as how vulnerable you are sinks in, she does a round circuit of you, taking in every angle of your frozen, helpless flesh.\n\n", false); 
@@ -533,7 +542,9 @@ function basiliskAdvantageGoblin():void {
 		stats(0,0,0,0,0,0,-100,0);
 	}
 	//Unsexed: 
-	else if(!player.hasVagina()) {
+	else if (!player.hasVagina()) 
+	{
+		outputText(images.showImage("basilisk-loss-sexless-goblinrape"));
 		outputText("At the corner of your vision, you see a small, familiar green shape hover into view.  The goblin is so busy sorting through her inventory of drugs that you actually manage to see her before she sees you.  When she does lift her head up and notices the petrified, naked individual in front of her, she is so surprised she drops her satchel.\n\n", false);
 
 		outputText("\"<i>A " + player.race() + "!</i>\" she yelps.  Hesitantly at first, then with increasing confidence as how vulnerable you are sinks in, she does a round circuit of you, taking in every angle of your frozen, helpless flesh.\n\n", false);
@@ -561,7 +572,9 @@ function basiliskAdvantageGoblin():void {
 		slimeFeed();
 	}
 	//Female: 
-	else {
+	else 
+	{
+		outputText(images.showImage("basilisk-loss-female-goblinrape"));
 		outputText("At the corner of your vision, you see a small, familiar green shape hover into view.  The goblin is so busy sorting through her inventory of drugs that you actually manage to see her before she sees you.  When she does lift her head up and notices the petrified, naked individual in front of her, she is so surprised she drops her satchel.\n\n", false);
 
 		outputText("\"<i>A " + player.race() + "!</i>\" she yelps.  Hesitantly at first, then with increasing confidence as how vulnerable you are sinks in, she does a round circuit of you, taking in every angle of your frozen, helpless flesh.\n\n", false);
@@ -584,6 +597,7 @@ function basiliskAdvantageGoblin():void {
 //Defeated, Taken Advantage of: minotaur
 function basiliskAdvantageMinotaur():void {
 	spriteSelect(75);
+	outputText(images.showImage("basilisk-loss-minotaurbuttrape"));
 	outputText("Time stretches by at an agonizingly slow pace as you stand there, a bizarre, motionless flesh statue.  You have no way of measuring how much time is passing; the sun is not in your direct line of vision.   You try to move any and every part of yourself in turn, but it is hopeless.  Your body is a cage, and you begin to hate the basilisk less because it paralyzed you and more because it left your mind entirely aware of it.  Every so often another unbidden backwash of erotic memories overwhelms your senses, keeping you helplessly aroused and reminded of who did this to you.\n\n", false);
 
 	outputText("You hear a deep, rumbling, snuffling sound from behind you, and the earth shakes as something big approaches you from behind.  <i>Please not a minotaur,</i> you think.  <i>Anything but a minotaur.  Please not a minotaur...</i>  Hands roughly grab your sides and a brutally powerful musk fills your nostrils as you groan in despair.\n\n", false);
@@ -618,6 +632,7 @@ function basiliskAdvantageMinotaur():void {
 function driderPCEggLaysBasilisk():void {
 	spriteSelect(75);
 	clearOutput();
+	outputText(images.showImage("basilisk-win-drider-egglaying"));
 	outputText("Leaning back on your carapace-clad abdomen, you try and look over your defeated opponent.  Even slumped over in ");
 	if(monster.HP < 1) outputText("exhaustion");
 	else outputText("arousal");
@@ -631,7 +646,7 @@ function driderPCEggLaysBasilisk():void {
 	outputText("\n\nYou feel your breath quicken and your cheeks flush as your ovipositor slides free, dripping lube, leaving trails across the stone as you ready yourself to give the egg-thief what he wanted.  Maybe not <i>exactly</i>, but you have no intention of allowing him to complain, in any case.  Spreading your eight legs wide, you lower yourself down until your ");
 	if(player.hasVagina()) outputText("already-dripping pussy");
 	if(player.gender == 3) outputText(" and ");
-	if(player.hasCock()) outputText("[eachCock]");
+	if(player.hasCock()) outputText("[eachcock]");
 	outputText(" hangs");
 	//if(player.gender != 3) outputText("s");
 	outputText(" just over his mouth.");
@@ -668,6 +683,7 @@ function driderPCEggLaysBasilisk():void {
 function layBeeEggsInABasilisk():void {
 	spriteSelect(75);
 	clearOutput();
+	outputText(images.showImage("basilisk-win-bee-egglaying"));
 	outputText("Completely destroyed, the basilisk lays face down on the ground, struggling pathetically to get up.  You giggle at the attempt as you ");
 	if(player.wingType == 1 || player.wingType ==2 ) outputText("buzz lightly over to the basilisk's writhing body");
 	else outputText("saunter arrogantly over to the basilisk's crumpled up figure");
