@@ -2747,7 +2747,6 @@ package classes
 			return true;
 		}
 		
-		//TODO Never called, as far as I can see and also conflicts with transform.as's genderCheck
 		public function genderCheck():void
 		{
 			if (hasCock() && hasVagina())
