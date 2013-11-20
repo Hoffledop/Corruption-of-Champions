@@ -47,55 +47,59 @@ Planned, but not implemented yet:
 // 
 var singleArgConverters:Object = 
 {
-		"armor"			: function():* {return player.armorName;},
-		"armorname"		: function():* {return player.armorName;},
-		"weapon"		: function():* {return player.weaponName;},
-		"weaponname"	: function():* {return player.weaponName;},
-		"name"			: function():* {return player.short;},
-		"pg"			: function():* {return "\n\n";},
-		"asshole"		: function():* {return assholeDescript();},
-		"butthole"		: function():* {return assholeDescript();},
-		"hair"			: function():* { return hairDescript(); },
-		"face"			: function():* { return player.face(); },
-		"legs"			: function():* { return player.legs(); },
-		"leg"			: function():* { return player.leg(); },
-		"feet"			: function():* { return player.feet(); },
-		"foot"			: function():* { return player.foot(); },
-		"sack"			: function():* { return sackDescript(); },
-		"balls"			: function():* { return ballsDescriptLight(); },
-		"sheath"		: function():* { return sheathDesc(); },
-		"chest"			: function():* { return chestDesc(); },
-		"fullchest"		: function():* { return allChestDesc(); },
-		"hips"			: function():* { return hipDescript();},
-		"butt"			: function():* { return buttDescript();},
-		"ass"			: function():* { return buttDescript();},
-		"nipple"		: function():* { return nippleDescript(0);},
-		"nipples"		: function():* { return nippleDescript(0) + "s";},
-		"tongue"		: function():* { return tongueDescript();},
-		"evade"			: function():* { return "[Evade]"; },
-		"misdirection"	: function():* { return "[Misdirection]"; },
-		"agility"		: function():* { return "[Agility]"; },
-		"master"		: function():* { return player.mf("master","mistress"); },
-		"master"		: function():* { return player.mf("Master","Mistress"); },
-		
-		"he"			: function():* { return player.mf("he","she"); },
-		"him"			: function():* { return player.mf("him","her"); },
-		"his"			: function():* { return player.mf("his","hers"); },
-
 		// all the errors related to trying to parse stuff if not present are
 		// already handled in the various *Descript() functions.
 		// no need to duplicate them.
-		"cunt"			: function():* { return vaginaDescript(); },
-		"pussy"			: function():* { return vaginaDescript(); },
-		"vagina"		: function():* { return vaginaDescript(); },
-		"vag"			: function():* { return vaginaDescript(); },
-		"clit"			: function():* { return clitDescript(); },
-		"cock"			: function():* {return cockDescript(0);},
-		"cocks"			: function():* { return multiCockDescriptLight(); },
-		"eachcock"		: function():* { return sMultiCockDesc();},
-		"onecock"		: function():* { return oMultiCockDesc();},
-		"cockhead"		: function():* { return cockHead(0);},
-		"vagorass"		: function():* { if (player.hasVagina())return vaginaDescript(); else assholeDescript();}
+
+		// Note: all key strings MUST be ENTIRELY lowercase.
+
+		"agility"					: function():* { return "[Agility]"; },
+		"armor"						: function():* { return player.armorName;},
+		"armorname"					: function():* { return player.armorName;},
+		"ass"						: function():* { return buttDescript();},
+		"asshole"					: function():* { return assholeDescript();},
+		"balls"						: function():* { return ballsDescriptLight(); },
+		"butt"						: function():* { return buttDescript();},
+		"butthole"					: function():* { return assholeDescript();},
+		"chest"						: function():* { return chestDesc(); },
+		"clit"						: function():* { return clitDescript(); },
+		"cock"						: function():* { return cockDescript(0);},
+		"cockhead"					: function():* { return cockHead(0);},
+		"cocks"						: function():* { return multiCockDescriptLight(); },
+		"cunt"						: function():* { return vaginaDescript(); },
+		"eachcock"					: function():* { return sMultiCockDesc();},
+		"evade"						: function():* { return "[Evade]"; },
+		"face"						: function():* { return player.face(); },
+		"feet"						: function():* { return player.feet(); },
+		"foot"						: function():* { return player.foot(); },
+		"fullchest"					: function():* { return allChestDesc(); },
+		"hair"						: function():* { return hairDescript(); },
+		"hairorfur"					: function():* { return hairOrFur(); },
+		"he"						: function():* { return player.mf("he","she"); },	
+		"him"						: function():* { return player.mf("him","her"); },
+		"hips"						: function():* { return hipDescript();},
+		"his"						: function():* { return player.mf("his","hers"); },
+		"leg"						: function():* { return player.leg(); },
+		"legs"						: function():* { return player.legs(); },
+		"master"					: function():* { return player.mf("master","mistress"); },
+		"misdirection"				: function():* { return "[Misdirection]"; },
+		"multicockdescriptlight"	: function():* { return multiCockDescriptLight(); },
+		"name"						: function():* { return player.short;},
+		"nipple"					: function():* { return nippleDescript(0);},
+		"nipples"					: function():* { return nippleDescript(0) + "s";},
+		"onecock"					: function():* { return oMultiCockDesc();},
+		"pg"						: function():* { return "\n\n";},
+		"pussy"						: function():* { return vaginaDescript(); },
+		"sack"						: function():* { return sackDescript(); },
+		"sheath"					: function():* { return sheathDesc(); },
+		"skin"						: function():* { return player.skin(); },
+		"skinfurscales"				: function():* { return player.skinFurScales(); },
+		"tongue"					: function():* { return tongueDescript();},
+		"vag"						: function():* { return vaginaDescript(); },
+		"vagina"					: function():* { return vaginaDescript(); },
+		"vagorass"					: function():* { if (player.hasVagina())return vaginaDescript(); else assholeDescript();},
+		"weapon"					: function():* { return player.weaponName;},
+		"weaponname"				: function():* { return player.weaponName;}
 
 }
 
@@ -261,6 +265,16 @@ var twoWordNumericTagsLookup:Object =
 					if(aspect-1 >= 0 && aspect-1 < player.cockTotal()) return cockDescript(aspect - 1);
 					else return "<b>(Attempt To Parse CockDescript for Invalid Cock)</b>";
 				}
+			},
+		"cockhead":
+			function(aspect):*
+			{
+				if(!player.hasCock()) return "<b>(Attempt to parse cockHead when none present.)</b>";
+				else
+				{
+					if(aspect-1 >= 0 && aspect-1 < player.cockTotal()) return cockHead(aspect - 1);
+					else return "<b>(Attempt To Parse CockHeadDescript for Invalid Cock)</b>";
+				}
 			}
 
 }
@@ -279,7 +293,7 @@ var twoWordTagsLookup:Object =
 	// PC Attributes:
 
 	"cock"		: cockLookups,
-	"cockHead"	: cockHeadLookups
+	"cockhead"	: cockHeadLookups
 }
 
 function convertDoubleArg(arg:String):String
@@ -688,11 +702,10 @@ function evalBracketContents(textCtnt:String, depth:int):String
 import flash.utils.getQualifiedClassName;
 
 
-// Main parser function.
-// textCtnt is the text you want parsed, depth is a number, which should be 0
-// or not passed at all.
+// Actual internal parser function.
+// textCtnt is the text you want parsed, depth is a number that reflects the current recursion depth
 // You pass in the string you want parsed, and the parsed result is returned as a string.
-function recParser(textCtnt:String, depth:int = 0):String
+function recParser(textCtnt:String, depth):String
 {
 
 	// Depth tracks our recursion depth
@@ -706,12 +719,28 @@ function recParser(textCtnt:String, depth:int = 0):String
 		return "";
 
 	var i:Number = 0;
-	var tmp:Number = 0;
+
 	var bracketCnt:Number = 0;
+	
+	var tmp:Number = -1;
 	
 	var retStr:String = "";
 
-	tmp = textCtnt.indexOf("[");
+	do
+	{
+		tmp = textCtnt.indexOf("[", tmp+1);
+		if (textCtnt.charAt(tmp-1) == "\\")
+		{
+			// trace("bracket is escaped 1", tmp);
+		}
+		else if (tmp != -1)
+		{
+			// trace("need to parse bracket", tmp);
+			break;
+		}
+
+	} while (tmp != -1)
+
 
 	if (tmp != -1)		// If we have any open brackets
 	{
@@ -719,11 +748,19 @@ function recParser(textCtnt:String, depth:int = 0):String
 		{
 			if (textCtnt.charAt(i) == "[")
 			{
-				bracketCnt += 1;
+				if (textCtnt.charAt(i-1) != "\\")
+				{
+					//trace("bracket is not escaped - 2");
+					bracketCnt += 1;
+				}
 			}
 			else if (textCtnt.charAt(i) == "]")
 			{
-				bracketCnt -= 1;
+				if (textCtnt.charAt(i-1) != "\\")
+				{
+					//trace("bracket is not escaped - 3");
+					bracketCnt -= 1;
+				}
 			}
 			if (bracketCnt == 0)	// We've found the matching closing bracket for the opening bracket at textCtnt[tmp]
 			{
@@ -774,7 +811,35 @@ function recParser(textCtnt:String, depth:int = 0):String
 		retStr += textCtnt;
 		
 	}
+
 	return retStr;
+}
+
+
+// Main parser function.
+// textCtnt is the text you want parsed, depth is a number, which should be 0
+// or not passed at all.
+// You pass in the string you want parsed, and the parsed result is returned as a string.
+
+
+
+function recursiveParser(contents:String):String
+{
+	var ret:String = "";
+	// Run through the parser
+	ret = recParser(contents, 0);
+
+	// Disabling markdown for the moment, because it's fucking with the line-endings.
+	// and then the markdown parser
+	// import showdown.Showdown;
+	// ret = Showdown.makeHtml(ret);
+
+	// cleanup escaped brackets
+	ret = ret.replace(/\\\]/g, "]")
+	ret = ret.replace(/\\\[/g, "[")
+
+	return ret
+
 }
 
 // Stupid string utility functions, because actionscript doesn't have them (WTF?)
