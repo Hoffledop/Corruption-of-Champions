@@ -1,4 +1,4 @@
-﻿//VARS
+//VARS
 //player.statusAffectv1("Edryn") >= 4 = FREE SEX
 // EDRYN_TIMES_HEL_THREESOMED:int = 404;
 // HEL_EDRYN_OFFER:int = 405;
@@ -446,7 +446,7 @@ function fuckEdrynNonTaur():void {
 }
 
 function edrynBar():Boolean {
-	if(flags[UNKNOWN_FLAG_NUMBER_00070] == 0 && hours >= 14 && hours <= 19 && (hours < 17 || flags[UNKNOWN_FLAG_NUMBER_00069] == 0))
+	if(flags[UNKNOWN_FLAG_NUMBER_00070] == 0 && model.time.hours >= 14 && model.time.hours <= 19 && (model.time.hours < 17 || flags[UNKNOWN_FLAG_NUMBER_00069] == 0))
 		return true;
 	return false;
 }

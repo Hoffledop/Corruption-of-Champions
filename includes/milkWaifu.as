@@ -123,29 +123,29 @@ function arriveWithLacticWaifuAtCamp():void {
 	//[Name Field.  If left empty, defaults to "Bath Slut"]
 	menu();
 	addButton(0,"Next",nameZeMilkBath);
-	nameBox.text = "";
+	mainView.nameBox.text = "";
 }
 
 
 function nameZeMilkBath():void {
-	if(nameBox.text == "" || nameBox.text is Number) {
+	if(mainView.nameBox.text == "" || mainView.nameBox.text is Number) {
 		clearOutput();
 		outputText("<b>You must give her a name.</b>", false);
 		menu();
 		addButton(0,"Next",nameZeMilkBath);
-		nameBox.visible = true;
-		nameBox.text = "Bath Slut";
-		nameBox.x = mainText.x + 5;
-		nameBox.y = mainText.y + 3 + mainText.textHeight;
+		mainView.nameBox.visible = true;
+		mainView.nameBox.text = "Bath Slut";
+		mainView.nameBox.x = mainView.mainText.x + 5;
+		mainView.nameBox.y = mainView.mainText.y + 3 + mainView.mainText.textHeight;
 		return;
 	}
 	clearOutput();
-	flags[MILK_NAME] = nameBox.text;
-	nameBox.text = "";
-	nameBox.visible = false;
+	flags[MILK_NAME] = mainView.nameBox.text;
+	mainView.nameBox.text = "";
+	mainView.nameBox.visible = false;
 	//Call her Bath Slut (You Asshole)
-	if(nameBox.text == "Bath Slut") outputText("Fuck it, Bath Slut it is.  At least she won't get confused.");
-	else if(nameBox.text == "Biscuit") outputText("Fuck it, you may as well butter her buns!");
+	if(mainView.nameBox.text == "Bath Slut") outputText("Fuck it, Bath Slut it is.  At least she won't get confused.");
+	else if(mainView.nameBox.text == "Biscuit") outputText("Fuck it, you may as well butter her buns!");
 	//Variable: " + flags[MILK_NAME] + "
 	//Having Named the Girl (Didn't name her Bath Slut)
 	else {
